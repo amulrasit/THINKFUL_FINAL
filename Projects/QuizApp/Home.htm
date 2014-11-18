@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>QuizApp</title>
+
+    <link rel="Stylesheet" href="StyleSheet.css"/>
+    <link rel="Stylesheet" href="Reset.css" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
+    <script src="JScript.js" type="text/javascript"></script>
+</head>
+<body>
+<center>
+<br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br />
+
+<h1>Question <label id="referenceQuest">1</label> of 5</h1><br /><br /></center>
+
+<p class="Questions" id="Question">Which tag makes the largest headline?</p><br />
+<input type="radio" class="radioAnswers" id="radioAnswer1" name="radio" value="0" onclick="CheckAnswer();"/><label id="Label1" class="choices">H1</label><br />
+<input type="radio" class="radioAnswers" id="radioAnswer2" name="radio" value="0" onclick="CheckAnswer();"/><label id="Label2" class="choices">H2</label><br />
+<input type="radio" class="radioAnswers" id="radioAnswer3" name="radio" value="0" onclick="CheckAnswer();"/><label id="Label3" class="choices">H3</label><br />
+<input type="radio" class="radioAnswers" id="radioAnswer4" name="radio" value="0" onclick="CheckAnswer();"/><label id="Label4" class="choices">H4</label><br /><br />
+
+
+<p class="Result" id="ans"></p><br /><br />
+<input type="button" class="btn" style="display:none" id="Submit" value="Submit" onclick="Final();"/>
+<input type="button" class="btn" value="Next" id="Next" onclick="NextQuestion();"/>
+<script src="JScript.js" type="text/javascript"></script>
+
+
+</body>
+</html>
